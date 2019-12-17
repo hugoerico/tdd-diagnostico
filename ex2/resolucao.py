@@ -1,13 +1,13 @@
-def hugo(palavra_frase):
-    for c in range(0, len(palavra_frase)):
-        if palavra_frase[c] in 'a':
-             palavra_frase = palavra_frase.replace('a', '@')
-        elif palavra_frase[c] in 'e':
-            palavra_frase = palavra_frase.replace('e', '&')
-        elif palavra_frase[c] in 'i':
-            palavra_frase = palavra_frase.replace('i', '!')
+def hugo(palavra):
+    for c in range(0, len(palavra)):
+        if palavra[c] in 'a':
+             palavra = palavra.replace('a', '@')
+        elif palavra[c] in 'e':
+            palavra = palavra.replace('e', '&')
+        elif palavra[c] in 'i':
+            palavra = palavra.replace('i', '!')
 
-    return palavra_frase
+    return palavra
 
 
 print(hugo('luar'))
